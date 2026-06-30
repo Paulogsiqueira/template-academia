@@ -66,7 +66,31 @@ section { padding: 5rem 0; }
 .service h3 { font-size: 1.6rem; margin-bottom: .5rem; }
 .service p { color: var(--muted); font-size: .94rem; }
 
-.gallery { background: var(--surface); }
+/* Grade de aulas */
+.section-sub { color: var(--muted); margin-top: .8rem; font-size: 1.02rem; font-family: 'Inter', sans-serif; font-weight: 400; text-transform: none; }
+.schedule { background: var(--surface); }
+.schedule-legend { display: flex; flex-wrap: wrap; justify-content: center; gap: .7rem; margin-bottom: 2rem; }
+.leg { font-size: .8rem; font-weight: 700; padding: .35rem .8rem; border-radius: 999px; color: #0d0d0f; }
+.leg-bike { background: #3ad1fe; }
+.leg-zumba { background: #ff5fa2; }
+.leg-cross { background: var(--brand); }
+.leg-muay { background: #ff8c42; }
+.leg-box { background: #b57bff; }
+.schedule-wrap { overflow-x: auto; border: 1px solid var(--line); border-radius: var(--radius); }
+.schedule-table { width: 100%; min-width: 680px; border-collapse: collapse; }
+.schedule-table th, .schedule-table td { padding: .9rem .6rem; text-align: center; border-bottom: 1px solid var(--line); border-right: 1px solid var(--line); }
+.schedule-table thead th { background: var(--bg); font-family: 'Anton', sans-serif; font-weight: 400; text-transform: uppercase; letter-spacing: .04em; font-size: 1rem; color: var(--brand); }
+.schedule-table tbody th { background: var(--bg); font-family: 'Anton', sans-serif; font-weight: 400; font-size: 1.05rem; }
+.schedule-table tr td:last-child, .schedule-table tr th:last-child { border-right: 0; }
+.schedule-table tbody tr:last-child td, .schedule-table tbody tr:last-child th { border-bottom: 0; }
+.cls { display: inline-block; font-size: .82rem; font-weight: 700; padding: .35rem .65rem; border-radius: 6px; color: #0d0d0f; white-space: nowrap; }
+.cls-bike { background: #3ad1fe; }
+.cls-zumba { background: #ff5fa2; }
+.cls-cross { background: var(--brand); }
+.cls-muay { background: #ff8c42; }
+.cls-box { background: #b57bff; }
+
+.gallery { background: var(--bg); }
 .gallery-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
 .gallery-grid img { aspect-ratio: 3/4; object-fit: cover; border-radius: var(--radius); filter: grayscale(.25); transition: filter .3s ease, transform .3s ease; }
 .gallery-grid img:hover { filter: grayscale(0); transform: scale(1.02); }
